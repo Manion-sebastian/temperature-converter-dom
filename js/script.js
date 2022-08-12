@@ -4,11 +4,11 @@ function toCfromF(initialTemp) {
 }
 
 function toKfromC(initialTemp) {
-    return initialTemp + 273.15
+    return (Number(initialTemp) + 273.15)
 }
 
 function toCfromK(initialTemp) {
-    return initialTemp - 273.15
+    return (initialTemp - 273.15)
 }
 
 function toFfromC(initialTemp) {
@@ -27,7 +27,7 @@ let convertClick = document.getElementById('start').addEventListener('click', fu
     if (fromChoice.value === "f" && toChoice.value === "c" ) {
         answer = toCfromF(initialTemp)
     } else if (fromChoice.value === 'c' && toChoice.value === 'k') {
-        answer = toKfromc(initialTemp)
+        answer = toKfromC(initialTemp) 
     } else if (fromChoice.value === 'k' && toChoice.value === 'c') {
         answer = toCfromK(initialTemp)
     } else if (fromChoice.value === 'c' && toChoice.value === 'f') {
@@ -41,7 +41,8 @@ let convertClick = document.getElementById('start').addEventListener('click', fu
     }
     
     
-    document.getElementById('output').innerText = answer.toFixed(1) + "°"
+    
+    document.getElementById('output').innerText = answer + "°"
 
 })
 
