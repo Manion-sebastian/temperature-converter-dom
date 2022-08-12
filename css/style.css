@@ -1,3 +1,125 @@
-h1 {
-  color: blue;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  
+  
+} 
+
+body {
+  text-align: center;
+  background-image: url(https://wallpaperaccess.com/full/2467562.jpg);
+  background-size: fit;
+  background-repeat: no-repeat;
 }
+
+.viewbox {
+  margin: 250px auto;
+  background-color: rgba(225, 225, 225, 0.75);
+  max-width: 50%;
+  padding: 5%;
+  border-radius: 80px;
+  border: solid white thick;
+}
+
+h1 {
+  font-size: 40px;
+
+}
+
+p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+
+h2, .dropdown {
+  display: inline;
+
+}
+
+h2 {
+  padding: 0 0 0 10px;
+  font-size: 23px;
+}
+
+select {
+  background-color: gold;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  text-align: center;
+  padding: 5px;
+}
+
+button {
+  width: 110px;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+button, select {
+  border: solid grey thin;
+}
+
+#start {
+  background-color: gold;
+  border-radius: 20px 0 0 20px;
+  padding-left: 10px;
+}
+
+#end {
+  background-color: lightskyblue;
+  border-radius: 0 20px 20px 0;
+  padding-right: 10px;
+}
+
+#end:hover, #start:hover {
+  background-color: black;
+}
+
+button:hover {
+  color: white;
+}
+
+#page-head {
+  margin-bottom: 50px;
+}
+
+#input {
+  margin: 30px;
+  height: 30px;
+  width: 180px;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+#output {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  padding: 10px;
+  border-radius: 30px;
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
+#input:focus {
+  background-color: rgb(197, 201, 238);
+  /* color: white; */
+}
+
+
+
+
+/* testing*/
+

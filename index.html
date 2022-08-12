@@ -4,10 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Temperature Conversion</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <div class="viewbox">
+
+    <section id="page-head">
+      <h1>TEMPERATURE CONVERTER</h1>
+      <P>A simple calculator for converting temperatures</P>
+    </section>
+    <section id="page-input">
+      <div class="current-to">
+      <h2>Current System:</h2>
+      <div class="dropdown">
+        <select name="Current System" id="fromTemp">
+          <option value="f">Fahrenheit</option>
+          <option value="c">Celsius</option>
+          <option value="k">Kelvin</option>
+        </select>
+      </div>
+      <h2>Convert to:</h2>
+      <div class="dropdown">
+        <select name="Target System" id="toTemp">
+          <option value="c">Celsius</option>
+          <option value="k">Kelvin</option>
+          <option value="f">Fahrenheit</option>
+        </select>
+      </div>
+      </div>
+      
+      <input type="text" id="input" autocomplete="off">
+      <button id="start">Convert</button>
+      <button id="end">Clear</button>
+  
+  
+    </section>
+    <section id="page-output">
+      <div id="output"></div>
+    </section>
+  </div>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
