@@ -9,9 +9,11 @@
 
 body {
   text-align: center;
-  background-image: url(https://wallpaperaccess.com/full/2467562.jpg);
+  /* background-image: url(https://wallpaperaccess.com/full/2467562.jpg);
   background-size: fit;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+  background: rgb(133,89,136);
+background: linear-gradient(180deg, rgba(133,89,136,1) 0%, rgba(72,52,117,1) 48%, rgba(7,11,52,1) 100%);
 }
 
 .viewbox {
@@ -20,11 +22,13 @@ body {
   max-width: 50%;
   padding: 5%;
   border-radius: 80px;
-  border: solid white thick;
+  border: solid rgb(101, 51, 95) thick;
 }
 
 h1 {
   font-size: 40px;
+  color: white;
+  text-shadow: 2px 2px purple;
 
 }
 
@@ -36,6 +40,8 @@ p {
 
 h2, .dropdown {
   display: inline;
+  color: gold;
+  text-shadow: 4px 4px black;
 
 }
 
@@ -45,12 +51,13 @@ h2 {
 }
 
 select {
-  background-color: gold;
+  background-color: rgb(177, 157, 197);
   border: none;
   border-radius: 6px;
   font-size: 20px;
   text-align: center;
   padding: 5px;
+  box-shadow: 4px 4px purple;
 }
 
 button {
@@ -59,7 +66,7 @@ button {
   border: none;
   font-size: 20px;
   font-weight: bold;
-  
+  box-shadow: 4px 4px purple;  
 }
 
 button, select {
@@ -100,7 +107,7 @@ button:hover {
   padding: 20px;
   font-size: 20px;
   font-weight: bold;
-
+  box-shadow: 4px 4px purple;
 }
 
 #output {
